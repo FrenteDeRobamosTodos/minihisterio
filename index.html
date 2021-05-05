@@ -16,7 +16,7 @@
         <img src="logo_transparente2.png" alt="">
     </header>
     <main>
-    <h1>Bienvenide al Curse de Leguaje Inclusive</h1>
+    <h1>Bienvenide al Curse de Leguaje inclusive</h1>
     <h2 class="subtitulo">Haga click en la frase que le parezca incorrecta:</h2>
     <br>
     <div class="frases">
@@ -31,16 +31,22 @@
     </main>   
     <script>
         $('#frase1').click(function(){
+        $("#frase1").fadeOut(0);
         $('#frase1').html('"Tengo una inmense pene adentre."<img src="panuelo.png" style="width:50px;height:50px;">')
         $('#frase1').css('color','rgb(61, 207, 61)')
+        $("#frase1").fadeIn(2000);
         });
         $('#frase2').click(function(){
+        $("#frase2").fadeOut(0);
         $('#frase2').html('"Me duele el hombre."<img src="panuelo.png" style="width:50px;height:50px;">')
         $('#frase2').css('color','rgb(61, 207, 61)')
+        $("#frase2").fadeIn(2000);
         });
         $('#frase3').click(function(){
+        $("#frase3").fadeOut(0);
         $('#frase3').html('"Me mete el pene derrepente."<img src="panuelo.png" style="width:50px;height:50px;">')
         $('#frase3').css('color','rgb(61, 207, 61)')
+        $("#frase3").fadeIn(2000);
         });
     </script>
     <footer>

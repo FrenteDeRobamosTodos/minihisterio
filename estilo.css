@@ -5,3 +5,14 @@
 header img{
     width: 60%;
 }
+h1 {
+    text-decoration: underline;
+}
+.subtitulo {
+    color: rgb(0, 44, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+.frases {
+    color: red;
+}

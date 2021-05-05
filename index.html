@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curse de Lenguaje Inclusive</title>
     <link rel="stylesheet" href="estilo.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,12 +17,25 @@
     </header>
     <main>
     <h1>Bienvenide al Curse de Leguaje inclusive</h1>
-    <h2>Haga click en la frase que le parezca está incorrecta:</h2>
+    <h2 class="subtitulo">Haga click en la frase que le parezca está incorrecta:</h2>
     <br>
-    <h3>Tengo una inmensa pena adentro</h3>
-    <br><br>
-    <h3>Me duele el hombro</h3>
+    <div class="frases">
+        <h2 id="frase1">Tengo una inmensa pena adentro.</h2>
+        <br><br>
+        <h2 id="frase2">Me duele el hombro.</h2>
+        <br><br>
+    </div>
 
     </main>   
+    <script>
+        $('#frase1').click(function(){
+        $('#frase1').html('"Tengo una inmense pene adentre."<img src="panuelo.png" style="width:50px;height:50px;">')
+        $('#frase1').css('color','rgb(61, 207, 61)')
+        });
+        $('#frase2').click(function(){
+        $('#frase2').html('"Me duele el hombre."<img src="panuelo.png" style="width:50px;height:50px;">')
+        $('#frase2').css('color','rgb(61, 207, 61)')
+        });
+    </script>
 </body>
 </html>
